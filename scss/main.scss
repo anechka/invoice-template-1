@@ -1,5 +1,18 @@
 $color: #F00;
 
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -7,7 +20,12 @@ html {
 }
 body {
   margin: 0;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  line-height: 1.4;
+  color: #000;
 }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -28,10 +46,24 @@ summary {
   display: block;
 }
 
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: #000;
+  &:active, &:hover {
+
+    outline: 0;
+  }
+}
+
 img {
   border: 0;
   max-width: 100%;
   display: block;
+}
+
+p {
+  margin: 0;
 }
 
 table {
@@ -42,6 +74,11 @@ table {
 td,
 th {
   padding: 0;
+}
+
+h1{
+  font-size: 44px;
+  font-family: "Avenir Black", sans-serif;
 }
 
 .text-right {
@@ -58,6 +95,7 @@ th {
   min-height: 1750px;
   margin: 0 auto;
   padding: 0 105px 0 105px;
+  word-wrap: break-word;
 }
 
 .container {
@@ -84,6 +122,7 @@ th {
   width: 58.33333333%;
 }
 
+
 .column-lg {
   width: 100%;
 
@@ -97,9 +136,9 @@ th {
 
 
 header {
-  .logo-invoice {
+  font-size: 22px;
+  .logo {
     margin-top: 89px;
-    padding-bottom: 22px;
   }
 
   .header-content {
@@ -118,6 +157,11 @@ header {
   padding: 20px 0 30px 24px;
   margin-bottom: 342px;
 
+  .due {
+    padding-top: 20px;
+    font-weight: bold;
+  }
+
 }
 
 
@@ -131,6 +175,7 @@ header {
       th {
         background: #000;
         padding: 16px 0 16px 24px;
+        vertical-align: middle;
       }
       &:first-child {
         text-align: left;

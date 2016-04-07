@@ -2,22 +2,19 @@ doctype html
 html(lang='en')
     head
         meta(charset='utf-8')
-        meta(http-equiv='X-UA-Compatible', content='IE=edge')
-        meta(name='viewport', content='width=device-width, initial-scale=1')
-        title website
+        title Invoice template
         link(href='css/main.css', rel='stylesheet')
 
     body
         div(class="page")
             header
                 .container
-                    .column-lg.logo-invoice
 
-                        .column-md
-                            img(src="#")
+                    .column-smaller.logo
+                        img(src="images/aida-trade.png", width="200px", height="150px")
 
-                        .column-sm.text-right
-                            h1 Invoice #1234567
+                    .column-lg.text-right
+                        h1 Invoice #1234567
 
                     .column-lg.header-content
 
@@ -45,10 +42,9 @@ html(lang='en')
                             .column-lg
                                 p Tel: 01245 227 303
                                 p Mob: 07894 304044
-                                p Email:
+                                p Email:&nbsp;
                                     a(href="mailto:info@tradesmanltd.co.uk") info@tradesmanltd.co.uk
-                                p Tradesman Company Ltd
-                                p Web:www.tradesmanltd.co.uk
+                                p Web: www.tradesmanltd.co.uk
 
                     .column-lg
                         p Date: 22/09/14
@@ -112,32 +108,36 @@ html(lang='en')
                             p Total:
                             p Paid to date
 
-                        .column-lg
+                        .column-lg.due
                             span DUE
 
                     .column-ex-small
                         .column-lg
-                            p £1,240.00
-                            p £0
-                            p £248
-                            p 22/10/14
+                            p
+                                b £1,240.00
+                            p
+                                b £0
+                            p
+                                b £248
+                            p
+                                b 22/10/14
 
-                        .column-lg
+                        .column-lg.due
                             span £956
 
 
             footer
                 .container
                     .column-lg.text-center
-                        b Payment Info:
+                        b Payment Info:&nbsp;
                         span Cheque payable to Tradesman Company Ltd
 
                     .column-lg.text-center.bank-details
-                        b Bank Details:
+                        b Bank Details:&nbsp;
                         span Halifax Bank Pls - Sort code: 123456 - Acc No. 12344321
 
                     .column-lg.text-center
-                        b Vat No:
-                        span 83639348
-                        b Company Registration Number:
+                        b Vat No:&nbsp;
+                        span 83639348&nbsp;
+                        b Company Registration Number:&nbsp;
                         span 89364939
