@@ -4,7 +4,140 @@ html(lang='en')
         meta(charset='utf-8')
         meta(http-equiv='X-UA-Compatible', content='IE=edge')
         meta(name='viewport', content='width=device-width, initial-scale=1')
-        // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
         title website
-        // Bootstrap
         link(href='css/main.css', rel='stylesheet')
+
+    body
+        div(class="page")
+            header
+                .container
+                    .column-lg.logo-invoice
+
+                        .column-md
+                            img(src="#")
+
+                        .column-sm.text-right
+                            h1 Invoice #1234567
+
+                    .column-lg.header-content
+
+                        .column-md
+                            h3 Bill to
+                            p Mr Steve Martin
+                            p 1 The Spinney
+                            p 121 Main Road
+                            p Danbury
+                            p Essex
+                            p CM3 4DL
+
+                        .column-sm
+
+                            .column-lg
+
+                                h3 From
+                                p Tradesman Company Ltd
+                                p 1 The Spinney
+                                p 121 Main Road
+                                p Danbury
+                                p Essex
+                                p CM3 4DL
+
+                            .column-lg
+                                p Tel: 01245 227 303
+                                p Mob: 07894 304044
+                                p Email:
+                                    a(href="mailto:info@tradesmanltd.co.uk") info@tradesmanltd.co.uk
+                                p Tradesman Company Ltd
+                                p Web:www.tradesmanltd.co.uk
+
+                    .column-lg
+                        p Date: 22/09/14
+                        p Payment Terms: Due on receipt
+
+            .container
+                table.table
+                    thead
+                        tr
+                            th DESCRIPTION
+                            th QTY
+                            th PRICE
+                            th TOTAL
+                            th VAT
+
+                    tbody
+                        tr
+                            td Parking
+                            td 1
+                            td £50
+                            td £50
+                            td 0 %
+
+                        tr
+                            td Windows
+                            td 2
+                            td £100
+                            td £200
+                            td 0 %
+
+                        tr
+                            td Labour
+                            td 8
+                            td £20
+                            td £160
+                            td 0 %
+
+                        tr
+                            td Boiler
+                            td 1
+                            td £800
+                            td £800
+                            td 0 %
+
+                        tr
+                            td Copper pipe
+                            td 3
+                            td £10
+                            td £30
+                            td 0 %
+
+                .column-lg.total-price
+                    .column-md
+                        p
+                            b Thank you for your buisiness
+
+                    .column-smaller
+                        .column-lg
+                            p Sub total:
+                            p VAT total:
+                            p Total:
+                            p Paid to date
+
+                        .column-lg
+                            span DUE
+
+                    .column-ex-small
+                        .column-lg
+                            p £1,240.00
+                            p £0
+                            p £248
+                            p 22/10/14
+
+                        .column-lg
+                            span £956
+
+
+            footer
+                .container
+                    .column-lg.text-center
+                        b Payment Info:
+                        span Cheque payable to Tradesman Company Ltd
+
+                    .column-lg.text-center.bank-details
+                        b Bank Details:
+                        span Halifax Bank Pls - Sort code: 123456 - Acc No. 12344321
+
+                    .column-lg.text-center
+                        b Vat No:
+                        span 83639348
+                        b Company Registration Number:
+                        span 89364939

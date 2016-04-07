@@ -1,1 +1,174 @@
 $color: #F00;
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.page {
+  position: relative;
+  width: 1240px;
+  min-height: 1750px;
+  margin: 0 auto;
+  padding: 0 105px 0 105px;
+}
+
+.container {
+  display: table;
+  content: " ";
+  width: 100%;
+
+}
+
+.column-ex-small {
+  width: 16.66666667%;
+}
+
+.column-smaller {
+  width: 25%;
+}
+
+
+.column-sm {
+  width: 41.66666667%;
+}
+
+.column-md {
+  width: 58.33333333%;
+}
+
+.column-lg {
+  width: 100%;
+
+}
+
+.column-ex-small, .column-smaller, .column-sm, .column-md, .column-lg {
+  position: relative;
+  float: left;
+  min-height: 1px;
+}
+
+
+header {
+  .logo-invoice {
+    margin-top: 89px;
+    padding-bottom: 22px;
+  }
+
+  .header-content {
+
+    padding: 50px 0;
+    margin-bottom: 50px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+
+  }
+}
+
+.total-price {
+
+  border-bottom: 2px solid #000;
+  padding: 20px 0 30px 24px;
+  margin-bottom: 342px;
+
+}
+
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 50px;
+
+  thead {
+    tr {
+      th {
+        background: #000;
+        padding: 16px 0 16px 24px;
+      }
+      &:first-child {
+        text-align: left;
+        color: white;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        padding: 20px 0 20px 24px;
+        vertical-align: middle;
+      }
+      &:first-child {
+        border-bottom: 2px solid #000;
+      }
+      &:last-child {
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+      }
+      &:nth-child(3){
+        border-bottom: 1px solid #000;
+        border-top: 1px solid #000;
+      }
+    }
+
+  }
+}
+
+footer {
+
+  .container {
+    padding-bottom: 69px;
+  }
+  .bank-details {
+
+    margin: 16px 0;
+
+  }
+}
