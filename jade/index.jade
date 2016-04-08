@@ -2,142 +2,360 @@ doctype html
 html(lang='en')
     head
         meta(charset='utf-8')
-        title Invoice template
+        title Document
         link(href='css/main.css', rel='stylesheet')
 
     body
         div(class="page")
-            header
-                .container
+            .wrapper
 
-                    .column-smaller.logo
-                        img(src="images/aida-trade.png", width="200px", height="150px")
+                header
+                    .container
 
-                    .column-lg.text-right
-                        h1 Invoice #1234567
+                        .column-smaller.logo
+                            img(src="images/aida-trade.png", width="200px", height="150px")
 
-                    .column-lg.header-content
+                        .column-larger.text-right
+                            h1 INVOICE #1234567
 
-                        .column-md
-                            h3 Bill to
-                            p Mr Steve Martin
-                            p 1 The Spinney
-                            p 121 Main Road
-                            p Danbury
-                            p Essex
-                            p CM3 4DL
+                        .column-larger.header-content
 
-                        .column-sm
-
-                            .column-lg
-
-                                h3 From
-                                p Tradesman Company Ltd
+                            .column-md
+                                h3 BILL TO
+                                p Mr Steve Martin
                                 p 1 The Spinney
                                 p 121 Main Road
                                 p Danbury
                                 p Essex
                                 p CM3 4DL
 
-                            .column-lg
-                                p Tel: 01245 227 303
-                                p Mob: 07894 304044
-                                p Email:&nbsp;
-                                    a(href="mailto:info@tradesmanltd.co.uk") info@tradesmanltd.co.uk
-                                p Web: www.tradesmanltd.co.uk
+                            .column-sm
 
-                    .column-lg
-                        p Date: 22/09/14
-                        p Payment Terms: Due on receipt
+                                .column-larger
 
-            .container
-                table.table
-                    thead
-                        tr
-                            th DESCRIPTION
-                            th QTY
-                            th PRICE
-                            th TOTAL
-                            th VAT
+                                    h3 FROM
+                                    p Tradesman Company Ltd
+                                    p 1 The Spinney
+                                    p 121 Main Road
+                                    p Danbury
+                                    p Essex
+                                    p CM3 4DL
 
-                    tbody
-                        tr
-                            td Parking
-                            td 1
-                            td £50
-                            td £50
-                            td 0 %
+                                .column-larger
+                                    p Tel: 01245 227 303
+                                    p Mob: 07894 304044
+                                    p Email:&nbsp;
+                                        a(href="mailto:info@tradesmanltd.co.uk") info@tradesmanltd.co.uk
+                                    p Web: www.tradesmanltd.co.uk
 
-                        tr
-                            td Windows
-                            td 2
-                            td £100
-                            td £200
-                            td 0 %
-
-                        tr
-                            td Labour
-                            td 8
-                            td £20
-                            td £160
-                            td 0 %
-
-                        tr
-                            td Boiler
-                            td 1
-                            td £800
-                            td £800
-                            td 0 %
-
-                        tr
-                            td Copper pipe
-                            td 3
-                            td £10
-                            td £30
-                            td 0 %
-
-                .column-lg.total-price
-                    .column-md
-                        p
-                            b Thank you for your buisiness
-
-                    .column-smaller
-                        .column-lg
-                            p Sub total:
-                            p VAT total:
-                            p Total:
-                            p Paid to date
-
-                        .column-lg.due
-                            span DUE
-
-                    .column-ex-small
-                        .column-lg
-                            p
-                                b £1,240.00
-                            p
-                                b £0
-                            p
-                                b £248
-                            p
-                                b 22/10/14
-
-                        .column-lg.due
-                            span £956
+                        .column-larger
+                            p Date: 22/09/14
+                            p Payment Terms: Due on receipt
 
 
-            footer
                 .container
-                    .column-lg.text-center
-                        b Payment Info:&nbsp;
-                        span Cheque payable to Tradesman Company Ltd
 
-                    .column-lg.text-center.bank-details
-                        b Bank Details:&nbsp;
-                        span Halifax Bank Pls - Sort code: 123456 - Acc No. 12344321
 
-                    .column-lg.text-center
-                        b Vat No:&nbsp;
-                        span 83639348&nbsp;
-                        b Company Registration Number:&nbsp;
-                        span 89364939
+                    table.table
+                        thead
+                            tr
+                                th DESCRIPTION
+                                th QTY
+                                th PRICE
+                                th TOTAL
+                                th VAT
+
+                        tbody
+                            tr
+                                td Parking
+                                td 1
+                                td £50
+                                td £50
+                                td 0 %
+
+                            tr
+                                td Windows
+                                td 2
+                                td £100
+                                td £200
+                                td 0 %
+
+                            tr
+                                td Labour
+                                td 8
+                                td £20
+                                td £160
+                                td 0 %
+
+                            tr
+                                td Boiler
+                                td 1
+                                td £800
+                                td £800
+                                td 0 %
+
+                            tr
+                                td Copper pipe
+                                td 3
+                                td £10
+                                td £30
+                                td 0 %
+
+                            tr
+                                td Parking
+                                td 1
+                                td £50
+                                td £50
+                                td 0 %
+
+                            tr
+                                td Windows
+                                td 2
+                                td £100
+                                td £200
+                                td 0 %
+
+                            tr
+                                td Labour
+                                td 8
+                                td £20
+                                td £160
+                                td 0 %
+
+                            tr
+                                td Boiler
+                                td 1
+                                td £800
+                                td £800
+                                td 0 %
+
+                            tr
+                                td Copper pipe
+                                td 3
+                                td £10
+                                td £30
+                                td 0 %
+
+                            tr
+                                td Parking
+                                td 1
+                                td £50
+                                td £50
+                                td 0 %
+
+                            tr
+                                td Windows
+                                td 2
+                                td £100
+                                td £200
+                                td 0 %
+
+                            tr
+                                td Labour
+                                td 8
+                                td £20
+                                td £160
+                                td 0 %
+
+                            tr
+                                td Boiler
+                                td 1
+                                td £800
+                                td £800
+                                td 0 %
+
+                            tr
+                                td Copper pipe
+                                td 3
+                                td £10
+                                td £30
+                                td 0 %
+
+                            tr
+                                td Parking
+                                td 1
+                                td £50
+                                td £50
+                                td 0 %
+
+                            tr
+                                td Windows
+                                td 2
+                                td £100
+                                td £200
+                                td 0 %
+
+                            tr
+                                td Labour
+                                td 8
+                                td £20
+                                td £160
+                                td 0 %
+
+                            tr
+                                td Boiler
+                                td 1
+                                td £800
+                                td £800
+                                td 0 %
+
+                            tr
+                                td Copper pipe
+                                td 3
+                                td £10
+                                td £30
+                                td 0 %
+
+                            tr
+                                td Parking
+                                td 1
+                                td £50
+                                td £50
+                                td 0 %
+
+                            tr
+                                td Windows
+                                td 2
+                                td £100
+                                td £200
+                                td 0 %
+
+                            tr
+                                td Labour
+                                td 8
+                                td £20
+                                td £160
+                                td 0 %
+
+                            tr
+                                td Boiler
+                                td 1
+                                td £800
+                                td £800
+                                td 0 %
+
+                            tr
+                                td Copper pipe
+                                td 3
+                                td £10
+                                td £30
+                                td 0 %
+
+                            tr
+                                td Parking
+                                td 1
+                                td £50
+                                td £50
+                                td 0 %
+
+                            tr
+                                td Windows
+                                td 2
+                                td £100
+                                td £200
+                                td 0 %
+
+                            tr
+                                td Labour
+                                td 8
+                                td £20
+                                td £160
+                                td 0 %
+
+                            tr
+                                td Boiler
+                                td 1
+                                td £800
+                                td £800
+                                td 0 %
+
+                            tr
+                                td Copper pipe
+                                td 3
+                                td £10
+                                td £30
+                                td 0 %
+
+                            tr
+                                td Parking
+                                td 1
+                                td £50
+                                td £50
+                                td 0 %
+
+                            tr
+                                td Windows
+                                td 2
+                                td £100
+                                td £200
+                                td 0 %
+
+                            tr
+                                td Labour
+                                td 8
+                                td £20
+                                td £160
+                                td 0 %
+
+                            tr
+                                td Boiler
+                                td 1
+                                td £800
+                                td £800
+                                td 0 %
+
+                            tr
+                                td Copper pipe
+                                td 3
+                                td £10
+                                td £30
+                                td 0 %
+
+
+
+
+                    .column-larger.total-price
+                        .column-lg
+                            p
+                                b Thank you for your buisiness
+
+                        .column-ex-small.total
+                            .column-larger
+                                p Sub total:
+                                p VAT total:
+                                p Total:
+                                p Paid to date
+
+                            .column-larger.due
+                                span DUE
+
+                        .column-ex-small.text-right.price
+                            .column-larger
+                                p
+                                    b £1,240.00
+                                p
+                                    b £0
+                                p
+                                    b £248
+                                p
+                                    b 22/10/14
+
+                            .column-larger.due
+                                span £956
+
+
+                footer
+                    .container
+                        .column-larger.text-center
+                            b Payment Info:&nbsp;
+                            span Cheque payable to Tradesman Company Ltd
+
+                        .column-larger.text-center.bank-details
+                            b Bank Details:&nbsp;
+                            span Halifax Bank Pls - Sort code: 123456 - Acc No. 12344321
+
+                        .column-larger.text-center
+                            b Vat No:&nbsp;
+                            span 83639348&nbsp;
+                            b Company Registration Number:&nbsp;
+                            span 89364939

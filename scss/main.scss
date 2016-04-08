@@ -1,14 +1,17 @@
-$color: #F00;
 
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/lato-regular-webfont.woff') format('woff');
+  src: url('../fonts/lato-regular-webfont.woff') format('woff'),
+  url('../fonts/lato-regular-webfont.ttf') format('truetype'),
+  url('../fonts/lato-regular-webfont.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/lato-bold-webfont.woff') format('woff');
+  src: url('../fonts/lato-bold-webfont.woff') format('woff'),
+  url('../fonts/lato-bold-webfont.ttf') format('truetype'),
+  url('../fonts/lato-bold-webfont.svg') format('svg');
   font-weight: 700;
   font-style: normal;
 }
@@ -17,6 +20,7 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  height: 100%;
 }
 body {
   margin: 0;
@@ -24,6 +28,7 @@ body {
   font-size: 21px;
   line-height: 1.4;
   color: #000;
+  height: 100%;
 }
 
 * {
@@ -78,7 +83,15 @@ th {
 
 h1{
   font-size: 45px;
-  font-family: "Avenir Black", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+h3 {
+
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+
 }
 
 .text-right {
@@ -94,15 +107,20 @@ h1{
   width: 1240px;
   min-height: 1750px;
   margin: 0 auto;
-  padding: 0 105px 0 105px;
+  padding: 0 55px 0 55px;
   word-wrap: break-word;
 }
 
+
+.wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
 .container {
   display: table;
   content: " ";
   width: 100%;
-
 }
 
 .column-ex-small {
@@ -122,13 +140,17 @@ h1{
   width: 58.33333333%;
 }
 
-
 .column-lg {
+  width: 66.66666667%;
+
+}
+
+.column-larger {
   width: 100%;
 
 }
 
-.column-ex-small, .column-smaller, .column-sm, .column-md, .column-lg {
+.column-ex-small, .column-smaller, .column-sm, .column-md, .column-lg, .column-larger{
   position: relative;
   float: left;
   min-height: 1px;
@@ -157,6 +179,16 @@ header {
   padding: 20px 0 30px 24px;
   margin-bottom: 342px;
 
+
+  .price {
+    padding-right: 24px;
+  }
+
+  .total {
+    padding-left: 24px;
+  }
+
+
   .due {
     padding-top: 20px;
     font-weight: bold;
@@ -169,47 +201,59 @@ header {
   width: 100%;
   max-width: 100%;
   margin-top: 50px;
-
   thead {
     tr {
+
       th {
         background: #000;
-        padding: 16px 0 16px 24px;
+        border: 0;
         vertical-align: middle;
-      }
-      &:first-child {
+        padding: 15px 40px 15px 0;
+        color: #fff;
         text-align: left;
-        color: white;
+        white-space: nowrap;
+        font-weight: 900;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        &:first-child {
+          width: 100%;
+          padding-left: 20px;
+          padding-right: 20px;
+          white-space: normal;
+        }
+        &:last-child {
+          padding-right: 20px;
+        }
       }
     }
   }
-
   tbody {
     tr {
+      border-bottom: 1px solid #000;
       td {
-        padding: 20px 0 20px 24px;
         vertical-align: middle;
-      }
-      &:first-child {
-        border-bottom: 2px solid #000;
-      }
-      &:last-child {
-        border-top: 2px solid #000;
-        border-bottom: 2px solid #000;
-      }
-      &:nth-child(3){
-        border-bottom: 1px solid #000;
-        border-top: 1px solid #000;
+        white-space: nowrap;
+        padding-right: 40px;
+        &:first-child {
+          padding-left: 20px;
+          padding-right: 20px;
+          white-space: normal;
+        }
+        &:last-child {
+          padding-right: 20px;
+        }
       }
     }
-
   }
 }
 
 footer {
 
+  min-height: 130px;
+
+
   .container {
-    padding-bottom: 69px;
+    padding-bottom: 70px;
   }
   .bank-details {
 
@@ -217,3 +261,26 @@ footer {
 
   }
 }
+
+@media print {
+
+  .wrapper {
+    padding-bottom: 260px;
+  }
+  footer {
+
+    position: fixed;
+    bottom: 0;
+
+    .container {
+      padding-bottom: 0;
+    }
+
+
+  }
+}
+
+
+
+
+
