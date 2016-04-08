@@ -212,7 +212,7 @@ header {
         color: #fff;
         text-align: left;
         white-space: nowrap;
-        font-weight: 900;
+        font-weight: 700;
         font-family: 'Lato', Helvetica, Arial, sans-serif;
         text-transform: uppercase;
         &:first-child {
@@ -271,6 +271,8 @@ footer {
 
     position: fixed;
     bottom: 0;
+    left: 0;
+    right: 0;
 
     .container {
       padding-bottom: 0;
